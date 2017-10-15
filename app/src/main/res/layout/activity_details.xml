@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageViewPicture"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewPicture"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="25dp"
+            android:layout_toStartOf="@+id/imageViewPicture"
+            android:text="@string/nameLabel"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignTop="@+id/textView"
+            android:layout_marginRight="20dp"
+            android:layout_toEndOf="@+id/textView"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="13dp"
+            android:text="@string/artistLabel"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/textViewArtist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_alignTop="@+id/textView6"
+            android:layout_marginRight="20dp"
+            android:layout_toEndOf="@+id/textView"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_below="@+id/textView6"
+            android:layout_marginTop="15dp"
+            android:text="@string/urlLabel"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/textViewURL"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/textViewArtist"
+            android:layout_alignTop="@+id/textView9"
+            android:layout_marginRight="20dp"
+            android:textColor="@android:color/black"
+            android:autoLink="web"/>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_below="@+id/textViewURL"
+            android:layout_marginTop="22dp"
+            android:text="@string/similarTracksLabel"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewSingleTrack"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView11"></android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</layout>

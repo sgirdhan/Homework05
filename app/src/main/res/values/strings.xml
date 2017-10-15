@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Music Search</string>
+    <string name="search_activity_name">Search Results</string>
+    <string name="actionAddToFav">Add to Favorites</string>
+    <string name="textLabelNoFavorites">No Favorites</string>
+    <string name="textLabelFavorites">Favorites</string>
+    <string name="toastAddedToFav">Added to Favorites</string>
+    <!--<string name="toastUpdatedInFav">Updated Favorites Record</string>-->
+    <string name="toastNoData">No data available</string>
+
+    <string name="searchLabel">Search Music</string>
+    <string name="searchButton">Search</string>
+    <string name="favouritesLabel">Favourites</string>
+    <string name="nameLabel">Name:</string>
+    <string name="artistLabel">Artist:</string>
+    <string name="urlLabel">URL:</string>
+    <string name="similarTracksLabel">Similar Tracks</string>
+</resources>
